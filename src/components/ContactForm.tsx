@@ -70,8 +70,8 @@ export const ContactForm = () => {
                 onChange={(e) => field.handleChange(e.target.value)}
                 className="w-full p-2 border rounded-md border-black text-black"
               />
-              {field.state.meta.touched && field.state.meta.error && (
-                <p className="text-red-500">{field.state.meta.error}</p>
+              {field.state.meta.isTouched && field.state.meta.errors.length && (
+                <p className="text-red-500">{field.state.meta.errors[0]}</p>
               )}
             </div>
           )}
@@ -87,8 +87,8 @@ export const ContactForm = () => {
                 onChange={(e) => field.handleChange(e.target.value)}
                 className="w-full p-2 border rounded-md border-black text-black"
               />
-              {field.state.meta.touched && field.state.meta.error && (
-                <p className="text-red-500">{field.state.meta.error}</p>
+              {field.state.meta.isTouched && field.state.meta.errors.length && (
+                <p className="text-red-500">{field.state.meta.errors[0]}</p>
               )}
             </div>
           )}
