@@ -47,7 +47,7 @@ export const ContactDetail = () => {
       </div>
       <div className="mt-4 flex gap-2">
         <button
-          onClick={() => navigate({ to: `/contacts/${contactId}/edit` })}
+          onClick={() => navigate({ to: `/contacts/edit/${contactId}` })}
           className="bg-blue-500 text-white px-4 py-2 rounded-md"
         >
           Edit
